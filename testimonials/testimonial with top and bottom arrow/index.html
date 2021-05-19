@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testimonial with top and bottom arrow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>Customers Review</h1>
+        <div class="review-box">
+            <div id="slide">
+                <div class="card">
+                    <div class="profile">
+                        <img src="images/pic1.jpg" alt="">
+                        <div>
+                            <h3>Jhon Doe</h3>
+                            <p>web designer</p>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum libero commodi repellat enim vitae? Quidem recusandae consequatur, quas assumenda ratione veniam sit totam est asperiores distinctio velit voluptatibus doloremque sapiente debitis, veritatis officia odio. Iste numquam nobis quidem eum possimus!</p>
+                </div>
+                <div class="card">
+                    <div class="profile">
+                        <img src="images/pic2.jpg" alt="">
+                        <div>
+                            <h3>Mohammad Rasel</h3>
+                            <p>web developer</p>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum libero commodi repellat enim vitae? Quidem recusandae consequatur, quas assumenda ratione veniam sit totam est asperiores distinctio velit voluptatibus doloremque sapiente debitis, veritatis officia odio. Iste numquam nobis quidem eum possimus!</p>
+                </div>
+                <div class="card">
+                    <div class="profile">
+                        <img src="images/pic3.jpg" alt="">
+                        <div>
+                            <h3>Jannatul Mawa</h3>
+                            <p>Full stack developer</p>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum libero commodi repellat enim vitae? Quidem recusandae consequatur, quas assumenda ratione veniam sit totam est asperiores distinctio velit voluptatibus doloremque sapiente debitis, veritatis officia odio. Iste numquam nobis quidem eum possimus!</p>
+                </div>
+                <div class="card">
+                    <div class="profile">
+                        <img src="images/pic4.jpg" alt="">
+                        <div>
+                            <h3>Marzana Manni</h3>
+                            <p>Marketting Officer</p>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum libero commodi repellat enim vitae? Quidem recusandae consequatur, quas assumenda ratione veniam sit totam est asperiores distinctio velit voluptatibus doloremque sapiente debitis, veritatis officia odio. Iste numquam nobis quidem eum possimus!</p>
+                </div>
+                <div class="card">
+                    <div class="profile">
+                        <img src="images/pic4.jpg" alt="">
+                        <div>
+                            <h3>Marzana Manni</h3>
+                            <p>Marketting Officer</p>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum libero commodi repellat enim vitae? Quidem recusandae consequatur, quas assumenda ratione veniam sit totam est asperiores distinctio velit voluptatibus doloremque sapiente debitis, veritatis officia odio. Iste numquam nobis quidem eum possimus!</p>
+                </div>
+            </div>
+            <div class="slidebar">
+                <img src="images/up-arrow.png" id="upArrow">
+                <img src="images/down-arrow.png" id="downArrow">
+            </div>
+        </div>
+    </div>
+    <script>
+        let slide=document.getElementById("slide");
+        let upArrow=document.getElementById("upArrow")
+        let downArrow=document.getElementById("downArrow")
+        let card=document.getElementsByClassName("card").length
+        let x=0;
+
+        upArrow.onclick=function(){
+            let totalSlide=(-300*card)+300
+            if(x > totalSlide){
+                x=x-300
+                slide.style.top=x+"px"
+            }
+        }
+        downArrow.onclick=function(){
+            if(x < 0){
+                x= x + 300
+                slide.style.top=x+"px"
+            }
+        }
+    </script>
+</body>
+</html>

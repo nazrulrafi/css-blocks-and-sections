@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin:100px 0;
+    padding: 0;
+    background: #262626;
+    width: 100%;
+    min-height: 100vh;
+    font-family: sans-serif;
+
+}
+.testimonials{
+    position: relative;
+    max-width: 100%;
+    -webkit-box-reflect: below 1px linear-gradient(tranparent 70%,#0009);
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    min-height: 350px;
+    background: #fff;
+    margin: 0 20px;
+}
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right{
+    background-image: none;
+}
+.testimonials .card{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 40px;
+    background: #333;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,.5);
+    
+    
+}
+.testimonials .card .layer{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(#03a9f4,#e91ee3) ;
+    z-index: 1;
+    transition: 0.5s;
+}
+.testimonials .card .content{
+    z-index: 5;
+    position: relative;
+}
+
+img{
+    width: 30%;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+.testimonials .card:hover .layer{
+    top:0;
+}
+p{
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+}
+h2{
+    font-size: 18px;
+    color: #fff;
+}
+h2 span{
+    color: #09a9f4;
+    font-size: 14px;
+    transition: 0.5s;
+}

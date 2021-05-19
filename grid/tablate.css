@@ -1,0 +1,34 @@
+body{
+
+}
+main{
+    display: grid;
+    height: 100vh;
+    row-gap: 2px;
+    column-gap: 2px;
+    grid-template-columns: 1fr 1fr 1fr
+}
+.s2{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+    background-color: #273c75;
+ }
+ .s3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: center;
+ }
+ .s4{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+ }
+ .s5{
+    grid-column-start: 3;
+    grid-column-end: 4;
+   
+    text-align: center;
+ }

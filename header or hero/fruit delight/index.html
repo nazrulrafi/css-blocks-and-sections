@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Delight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="col-left">
+            <img class="logo" src="images/logo.png" alt="" srcset="">
+            <div class="content-box">
+                <img src="images/rating.png" class="rating" alt="" srcset="">
+                <h1>Pico de Gallo Fruit Salad</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptas explicabo, accusamus distinctio quod architecto quibusdam eum impedit? Quasi facilis quae sint quibusdam, dolorem reprehenderit quas nobis numquam ducimus quis.</p>
+                <button type="button">View Ingredient<img src="images/arrow.png"></button>
+            </div>
+            <img src="images/left-arrow.png" class="left-arrow" alt="" srcset="" id="leftArrow">
+        </div>
+        <div class="col-right">
+            <div class="nav-bar">
+                <div class="search-box">
+                    <input type="text" placeholder="Find Recipies,Video and More ">
+                    <img src="images/search.png" alt="" srcset="">
+                </div>
+                <ul>
+                    <li><a href="#"><img src="images/fill-tag.png">Saves </a></li>
+                    <li><a href="#">SignUp</a></li>
+                </ul>
+            </div>
+            <div class="more-items">
+                <img src="images/fruit1.png" alt="" srcset="">
+                <img src="images/fruit2.png" alt="" srcset="">
+                <img src="images/fruit3.png" alt="" srcset="">
+            </div>
+            <img src="images/right-arrow.png" class="right-arrow" id="rightArrow" alt="" srcset="">
+        </div>
+        
+            <img src="images/fruits.png" class="main-img" id="mainImg" alt="">
+     
+    </div>
+    <script>
+        var right=document.getElementById("rightArrow");
+        var left=document.getElementById("leftArrow");
+        var main_img=document.getElementById("mainImg")
+        var images=Array(
+            "images/main-img01.png",
+            "images/main-img02.png",
+        )
+        main_img.onclick=function(){
+            main_img.src=images[0]
+        }
+    </script>
+</body>
+</html>
